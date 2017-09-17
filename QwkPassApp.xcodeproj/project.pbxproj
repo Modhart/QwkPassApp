@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		321F6EB9C8E2307BF1424753 /* Pods_QwkPassApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEDB13C90EA957A5E54B9461 /* Pods_QwkPassApp.framework */; };
+		677B06F879B2BDAC4CF4A4E9 /* Pods_QwkPassAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949A74ACF34F9255B4EBE9F4 /* Pods_QwkPassAppUITests.framework */; };
 		B3851BAC1F6C77BC00D8A8DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3851BAB1F6C77BC00D8A8DC /* AppDelegate.swift */; };
-		B3851BAE1F6C77BC00D8A8DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3851BAD1F6C77BC00D8A8DC /* ViewController.swift */; };
+		B3851BAE1F6C77BC00D8A8DC /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3851BAD1F6C77BC00D8A8DC /* LaunchViewController.swift */; };
 		B3851BB11F6C77BC00D8A8DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3851BAF1F6C77BC00D8A8DC /* Main.storyboard */; };
 		B3851BB31F6C77BC00D8A8DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3851BB21F6C77BC00D8A8DC /* Assets.xcassets */; };
 		B3851BB61F6C77BC00D8A8DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3851BB41F6C77BC00D8A8DC /* LaunchScreen.storyboard */; };
 		B3851BC11F6C77BC00D8A8DC /* QwkPassAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3851BC01F6C77BC00D8A8DC /* QwkPassAppTests.swift */; };
 		B3851BCC1F6C77BC00D8A8DC /* QwkPassAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3851BCB1F6C77BC00D8A8DC /* QwkPassAppUITests.swift */; };
+		B3851BDC1F6C8F4E00D8A8DC /* Nunito in Resources */ = {isa = PBXBuildFile; fileRef = B3851BDB1F6C8F4E00D8A8DC /* Nunito */; };
+		B3851BDE1F6C8FF900D8A8DC /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3851BDD1F6C8FF900D8A8DC /* Nunito-Regular.ttf */; };
+		B3851BE21F6C9F7700D8A8DC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3851BE11F6C9F7700D8A8DC /* RegisterViewController.swift */; };
+		B3851BE41F6CA3DA00D8A8DC /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3851BE31F6CA3DA00D8A8DC /* Nunito-Bold.ttf */; };
+		B397B0841F6F399D00B6C9C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B397B0831F6F399D00B6C9C3 /* GoogleService-Info.plist */; };
+		BCE5C9F3F4B949DC600C92BE /* Pods_QwkPassAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1178621C9D0A99DFB219C32A /* Pods_QwkPassAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1178621C9D0A99DFB219C32A /* Pods_QwkPassAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QwkPassAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18000553D955F58F6BEB0E81 /* Pods-QwkPassAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QwkPassAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QwkPassAppUITests/Pods-QwkPassAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2FF4293ABB5FE7B5914C8480 /* Pods-QwkPassApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QwkPassApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-QwkPassApp/Pods-QwkPassApp.release.xcconfig"; sourceTree = "<group>"; };
+		82A10AD830205B55F0C91607 /* Pods-QwkPassAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QwkPassAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QwkPassAppTests/Pods-QwkPassAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		949A74ACF34F9255B4EBE9F4 /* Pods_QwkPassAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QwkPassAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEDB13C90EA957A5E54B9461 /* Pods_QwkPassApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QwkPassApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3851BA81F6C77BC00D8A8DC /* QwkPassApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QwkPassApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3851BAB1F6C77BC00D8A8DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B3851BAD1F6C77BC00D8A8DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B3851BAD1F6C77BC00D8A8DC /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		B3851BB01F6C77BC00D8A8DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3851BB21F6C77BC00D8A8DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3851BB51F6C77BC00D8A8DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +61,14 @@
 		B3851BC71F6C77BC00D8A8DC /* QwkPassAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QwkPassAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3851BCB1F6C77BC00D8A8DC /* QwkPassAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QwkPassAppUITests.swift; sourceTree = "<group>"; };
 		B3851BCD1F6C77BC00D8A8DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3851BDB1F6C8F4E00D8A8DC /* Nunito */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Nunito; sourceTree = "<group>"; };
+		B3851BDD1F6C8FF900D8A8DC /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nunito-Regular.ttf"; path = "QwkPassApp/Nunito/Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		B3851BE11F6C9F7700D8A8DC /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B3851BE31F6CA3DA00D8A8DC /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nunito-Bold.ttf"; path = "QwkPassApp/Nunito/Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		B397B0831F6F399D00B6C9C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C1C9DA37F4656680B8C548AA /* Pods-QwkPassAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QwkPassAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QwkPassAppUITests/Pods-QwkPassAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EAAB8A00B3BEDE3E5CA830A9 /* Pods-QwkPassAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QwkPassAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QwkPassAppTests/Pods-QwkPassAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED69B7D8296C2615111F9347 /* Pods-QwkPassApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QwkPassApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QwkPassApp/Pods-QwkPassApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				321F6EB9C8E2307BF1424753 /* Pods_QwkPassApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCE5C9F3F4B949DC600C92BE /* Pods_QwkPassAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +92,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				677B06F879B2BDAC4CF4A4E9 /* Pods_QwkPassAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D1F64BA55E392B651DCB3CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEDB13C90EA957A5E54B9461 /* Pods_QwkPassApp.framework */,
+				1178621C9D0A99DFB219C32A /* Pods_QwkPassAppTests.framework */,
+				949A74ACF34F9255B4EBE9F4 /* Pods_QwkPassAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94D76DE5BECA3D72452D9373 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED69B7D8296C2615111F9347 /* Pods-QwkPassApp.debug.xcconfig */,
+				2FF4293ABB5FE7B5914C8480 /* Pods-QwkPassApp.release.xcconfig */,
+				EAAB8A00B3BEDE3E5CA830A9 /* Pods-QwkPassAppTests.debug.xcconfig */,
+				82A10AD830205B55F0C91607 /* Pods-QwkPassAppTests.release.xcconfig */,
+				18000553D955F58F6BEB0E81 /* Pods-QwkPassAppUITests.debug.xcconfig */,
+				C1C9DA37F4656680B8C548AA /* Pods-QwkPassAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B3851B9F1F6C77BC00D8A8DC = {
 			isa = PBXGroup;
 			children = (
+				B3851BE31F6CA3DA00D8A8DC /* Nunito-Bold.ttf */,
+				B3851BDD1F6C8FF900D8A8DC /* Nunito-Regular.ttf */,
 				B3851BAA1F6C77BC00D8A8DC /* QwkPassApp */,
 				B3851BBF1F6C77BC00D8A8DC /* QwkPassAppTests */,
 				B3851BCA1F6C77BC00D8A8DC /* QwkPassAppUITests */,
 				B3851BA91F6C77BC00D8A8DC /* Products */,
+				94D76DE5BECA3D72452D9373 /* Pods */,
+				4D1F64BA55E392B651DCB3CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +149,15 @@
 		B3851BAA1F6C77BC00D8A8DC /* QwkPassApp */ = {
 			isa = PBXGroup;
 			children = (
+				B3851BDB1F6C8F4E00D8A8DC /* Nunito */,
 				B3851BAB1F6C77BC00D8A8DC /* AppDelegate.swift */,
-				B3851BAD1F6C77BC00D8A8DC /* ViewController.swift */,
+				B3851BAD1F6C77BC00D8A8DC /* LaunchViewController.swift */,
 				B3851BAF1F6C77BC00D8A8DC /* Main.storyboard */,
 				B3851BB21F6C77BC00D8A8DC /* Assets.xcassets */,
 				B3851BB41F6C77BC00D8A8DC /* LaunchScreen.storyboard */,
 				B3851BB71F6C77BC00D8A8DC /* Info.plist */,
+				B3851BE11F6C9F7700D8A8DC /* RegisterViewController.swift */,
+				B397B0831F6F399D00B6C9C3 /* GoogleService-Info.plist */,
 			);
 			path = QwkPassApp;
 			sourceTree = "<group>";
@@ -132,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3851BD01F6C77BC00D8A8DC /* Build configuration list for PBXNativeTarget "QwkPassApp" */;
 			buildPhases = (
+				A55FCCE6DC55337DAAEEAB56 /* [CP] Check Pods Manifest.lock */,
 				B3851BA41F6C77BC00D8A8DC /* Sources */,
 				B3851BA51F6C77BC00D8A8DC /* Frameworks */,
 				B3851BA61F6C77BC00D8A8DC /* Resources */,
+				58ED9B45E7DCD9068C5EB844 /* [CP] Embed Pods Frameworks */,
+				E2BE6CFE113C498B4DC144B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3851BD31F6C77BC00D8A8DC /* Build configuration list for PBXNativeTarget "QwkPassAppTests" */;
 			buildPhases = (
+				C4278188FDF4EDF7ED6A428D /* [CP] Check Pods Manifest.lock */,
 				B3851BB81F6C77BC00D8A8DC /* Sources */,
 				B3851BB91F6C77BC00D8A8DC /* Frameworks */,
 				B3851BBA1F6C77BC00D8A8DC /* Resources */,
+				E47D2A75A9F91F9B0DE0079B /* [CP] Embed Pods Frameworks */,
+				9896D28F375C62FC577BE64C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3851BD61F6C77BC00D8A8DC /* Build configuration list for PBXNativeTarget "QwkPassAppUITests" */;
 			buildPhases = (
+				8024B0ECD15E1B1B8EE0CE81 /* [CP] Check Pods Manifest.lock */,
 				B3851BC31F6C77BC00D8A8DC /* Sources */,
 				B3851BC41F6C77BC00D8A8DC /* Frameworks */,
 				B3851BC51F6C77BC00D8A8DC /* Resources */,
+				0D438969201BF3D1B670D370 /* [CP] Embed Pods Frameworks */,
+				825DB431AA94124307F2F11E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,9 +296,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3851BE41F6CA3DA00D8A8DC /* Nunito-Bold.ttf in Resources */,
+				B3851BDE1F6C8FF900D8A8DC /* Nunito-Regular.ttf in Resources */,
 				B3851BB61F6C77BC00D8A8DC /* LaunchScreen.storyboard in Resources */,
 				B3851BB31F6C77BC00D8A8DC /* Assets.xcassets in Resources */,
 				B3851BB11F6C77BC00D8A8DC /* Main.storyboard in Resources */,
+				B3851BDC1F6C8F4E00D8A8DC /* Nunito in Resources */,
+				B397B0841F6F399D00B6C9C3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,12 +322,165 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D438969201BF3D1B670D370 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QwkPassAppUITests/Pods-QwkPassAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58ED9B45E7DCD9068C5EB844 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QwkPassApp/Pods-QwkPassApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QwkPassApp/Pods-QwkPassApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8024B0ECD15E1B1B8EE0CE81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QwkPassAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		825DB431AA94124307F2F11E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QwkPassAppUITests/Pods-QwkPassAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9896D28F375C62FC577BE64C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QwkPassAppTests/Pods-QwkPassAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A55FCCE6DC55337DAAEEAB56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QwkPassApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4278188FDF4EDF7ED6A428D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QwkPassAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2BE6CFE113C498B4DC144B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QwkPassApp/Pods-QwkPassApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E47D2A75A9F91F9B0DE0079B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QwkPassAppTests/Pods-QwkPassAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B3851BA41F6C77BC00D8A8DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3851BAE1F6C77BC00D8A8DC /* ViewController.swift in Sources */,
+				B3851BE21F6C9F7700D8A8DC /* RegisterViewController.swift in Sources */,
+				B3851BAE1F6C77BC00D8A8DC /* LaunchViewController.swift in Sources */,
 				B3851BAC1F6C77BC00D8A8DC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +633,7 @@
 		};
 		B3851BD11F6C77BC00D8A8DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED69B7D8296C2615111F9347 /* Pods-QwkPassApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QwkPassApp/Info.plist;
@@ -424,6 +646,7 @@
 		};
 		B3851BD21F6C77BC00D8A8DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FF4293ABB5FE7B5914C8480 /* Pods-QwkPassApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QwkPassApp/Info.plist;
@@ -436,6 +659,7 @@
 		};
 		B3851BD41F6C77BC00D8A8DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAAB8A00B3BEDE3E5CA830A9 /* Pods-QwkPassAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -450,6 +674,7 @@
 		};
 		B3851BD51F6C77BC00D8A8DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82A10AD830205B55F0C91607 /* Pods-QwkPassAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,6 +689,7 @@
 		};
 		B3851BD71F6C77BC00D8A8DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18000553D955F58F6BEB0E81 /* Pods-QwkPassAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = QwkPassAppUITests/Info.plist;
@@ -477,6 +703,7 @@
 		};
 		B3851BD81F6C77BC00D8A8DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1C9DA37F4656680B8C548AA /* Pods-QwkPassAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = QwkPassAppUITests/Info.plist;
@@ -507,6 +734,7 @@
 				B3851BD21F6C77BC00D8A8DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3851BD31F6C77BC00D8A8DC /* Build configuration list for PBXNativeTarget "QwkPassAppTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +743,7 @@
 				B3851BD51F6C77BC00D8A8DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3851BD61F6C77BC00D8A8DC /* Build configuration list for PBXNativeTarget "QwkPassAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +752,7 @@
 				B3851BD81F6C77BC00D8A8DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
