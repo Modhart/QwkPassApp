@@ -52,25 +52,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyf-ml-xoV">
-                                <rect key="frame" x="83" y="317" width="77" height="37"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="77" id="Ewm-Gv-io1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
-                                <state key="normal" title="Sign In">
-                                    <color key="titleColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="SignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7CH-7S-doC"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfK-8D-6L8">
                                 <rect key="frame" x="211" y="317" width="77" height="37"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -88,6 +69,26 @@
                                     <segue destination="9zr-gm-H9D" kind="popoverPresentation" identifier="SignUpSegue" popoverAnchorView="wfK-8D-6L8" id="F27-6h-7oV">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyf-ml-xoV">
+                                <rect key="frame" x="89" y="317" width="77" height="37"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="Ewm-Gv-io1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="SignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7CH-7S-doC"/>
+                                    <segue destination="ier-Hj-2js" kind="show" identifier="SignInSegue" id="Pes-dF-4Vt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -117,6 +118,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="AEz-BS-Q5Z">
+            <objects>
+                <viewController id="ZT5-l6-9nR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1bK-6T-vKQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="EGJ-dY-dmm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t2m-Ou-31Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Lcy-aD-eqv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pEl-0M-eil" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1838" y="298"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="Hdz-yl-FON">
+            <objects>
+                <viewController id="BhQ-R7-bZb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pF9-pZ-Ar7"/>
+                        <viewControllerLayoutGuide type="bottom" id="5XA-NE-Mso"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xAb-aE-HFm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="VcR-7y-wcv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMx-St-eGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1838" y="-357"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="qyl-82-bwQ">
+            <objects>
+                <tabBarController id="ier-Hj-2js" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="LoH-37-se1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BhQ-R7-bZb" kind="relationship" relationship="viewControllers" id="8js-TM-pA4"/>
+                        <segue destination="ZT5-l6-9nR" kind="relationship" relationship="viewControllers" id="HcD-lo-dvp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ncZ-H6-hMl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="874" y="139"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="3Ug-f1-eFM">
