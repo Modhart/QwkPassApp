@@ -3,10 +3,12 @@
 
 target 'QwkPassApp' do
   pod 'Firebase/Core'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
   use_frameworks!
 
   # Pods for QwkPassApp
-
+  
   target 'QwkPassAppTests' do
     inherit! :search_paths
     # Pods for testing
@@ -16,5 +18,5 @@ target 'QwkPassApp' do
     inherit! :search_paths
     # Pods for testing
   end
-
+  
 end
