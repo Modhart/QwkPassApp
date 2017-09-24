@@ -16,6 +16,7 @@ class LaunchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //creating button
         let loginButton = LoginButton(readPermissions: [ .publicProfile ])
         loginButton.center = view.center
@@ -59,6 +60,8 @@ class LaunchViewController: UIViewController {
 
     
     @IBOutlet weak var Email: UITextField!
+
+    
     @IBOutlet weak var Password: UITextField!
     
     
