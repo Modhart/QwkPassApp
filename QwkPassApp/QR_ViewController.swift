@@ -19,7 +19,7 @@ class QR_ViewController: UIViewController {
             let data = userString.data(using: .ascii, allowLossyConversion: false) //takes our text and encodes to ascii encoding
             let filter = CIFilter(name: "CIQRCodeGenerator")  //can switch this between QR code or Bar code
             filter?.setValue(data, forKey: "inputMessage")
-            let transform = CGAffineTransform(scaleX: 1, y: 1)
+            let transform = CGAffineTransform(scaleX: 100, y: 100)  // This sets the resolution of the QR code, 1 for poor 100 for best. The higher the value the higher the usage
             
             let img = UIImage(ciImage: (filter?.outputImage?.applying(transform))!)   //creates an image based on the
             
@@ -29,7 +29,6 @@ class QR_ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -37,16 +36,5 @@ class QR_ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
