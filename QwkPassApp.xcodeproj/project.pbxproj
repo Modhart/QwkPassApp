@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		321F6EB9C8E2307BF1424753 /* Pods_QwkPassApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEDB13C90EA957A5E54B9461 /* Pods_QwkPassApp.framework */; };
+		632FDF251F785EB100C7E673 /* QR_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDF241F785EB100C7E673 /* QR_ViewController.swift */; };
 		677B06F879B2BDAC4CF4A4E9 /* Pods_QwkPassAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949A74ACF34F9255B4EBE9F4 /* Pods_QwkPassAppUITests.framework */; };
 		B3851BAC1F6C77BC00D8A8DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3851BAB1F6C77BC00D8A8DC /* AppDelegate.swift */; };
 		B3851BAE1F6C77BC00D8A8DC /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3851BAD1F6C77BC00D8A8DC /* LaunchViewController.swift */; };
@@ -45,6 +46,7 @@
 		1178621C9D0A99DFB219C32A /* Pods_QwkPassAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QwkPassAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18000553D955F58F6BEB0E81 /* Pods-QwkPassAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QwkPassAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QwkPassAppUITests/Pods-QwkPassAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2FF4293ABB5FE7B5914C8480 /* Pods-QwkPassApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QwkPassApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-QwkPassApp/Pods-QwkPassApp.release.xcconfig"; sourceTree = "<group>"; };
+		632FDF241F785EB100C7E673 /* QR_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QR_ViewController.swift; sourceTree = "<group>"; };
 		82A10AD830205B55F0C91607 /* Pods-QwkPassAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QwkPassAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QwkPassAppTests/Pods-QwkPassAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		949A74ACF34F9255B4EBE9F4 /* Pods_QwkPassAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QwkPassAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEDB13C90EA957A5E54B9461 /* Pods_QwkPassApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QwkPassApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +154,7 @@
 				B3851BDB1F6C8F4E00D8A8DC /* Nunito */,
 				B3851BAB1F6C77BC00D8A8DC /* AppDelegate.swift */,
 				B3851BAD1F6C77BC00D8A8DC /* LaunchViewController.swift */,
+				632FDF241F785EB100C7E673 /* QR_ViewController.swift */,
 				B3851BAF1F6C77BC00D8A8DC /* Main.storyboard */,
 				B3851BB21F6C77BC00D8A8DC /* Assets.xcassets */,
 				B3851BB41F6C77BC00D8A8DC /* LaunchScreen.storyboard */,
@@ -492,6 +495,7 @@
 				B3851BE21F6C9F7700D8A8DC /* RegisterViewController.swift in Sources */,
 				B3851BAE1F6C77BC00D8A8DC /* LaunchViewController.swift in Sources */,
 				B3851BAC1F6C77BC00D8A8DC /* AppDelegate.swift in Sources */,
+				632FDF251F785EB100C7E673 /* QR_ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
