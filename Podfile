@@ -5,6 +5,8 @@ target 'QwkPassApp' do
   pod 'Firebase/Core'
   pod 'FacebookCore'
   pod 'FacebookLogin'
+  pod 'Stripe'
+  pod 'Alamofire'  #Simplifies HTTP stuff on-top of Foundation urlsessions
   use_frameworks!
 
   # Pods for QwkPassApp

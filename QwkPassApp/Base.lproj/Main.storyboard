@@ -139,6 +139,15 @@
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrU-fI-uht">
+                                <rect key="frame" x="162" y="582" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="GoToStripe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X9c-Py-ZAU"/>
+                                    <segue destination="hxh-VY-w1l" kind="show" id="Ev1-qS-8Yg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -325,6 +334,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRo-YQ-4Xc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-634.39999999999998" y="903.59820089955031"/>
+        </scene>
+        <!--Checkout View Controller-->
+        <scene sceneID="EUd-Oh-5Rd">
+            <objects>
+                <viewController id="hxh-VY-w1l" customClass="CheckoutViewController" customModule="QwkPassApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cZK-5B-7Um"/>
+                        <viewControllerLayoutGuide type="bottom" id="ssr-4Q-D3M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="78S-rt-Hcv" customClass="STripeView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TsJ-zw-bmG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="500" y="872"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

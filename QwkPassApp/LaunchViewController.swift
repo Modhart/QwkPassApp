@@ -71,6 +71,8 @@ class LaunchViewController: UIViewController {
     @IBAction func SignUp(_ sender: UIButton) {
     
     }
+    @IBAction func GoToStripe(_ sender: Any) {
+    }
 }
 
 

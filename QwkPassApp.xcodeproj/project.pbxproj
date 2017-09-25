@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		321F6EB9C8E2307BF1424753 /* Pods_QwkPassApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEDB13C90EA957A5E54B9461 /* Pods_QwkPassApp.framework */; };
+		632FDF271F787D7300C7E673 /* StripeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDF261F787D7300C7E673 /* StripeViewController.swift */; };
+		632FDF291F787FDD00C7E673 /* MyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDF281F787FDD00C7E673 /* MyAPIClient.swift */; };
+		632FDF2D1F78848F00C7E673 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDF2C1F78848F00C7E673 /* Buttons.swift */; };
+		632FDF2F1F7884F800C7E673 /* CheckoutRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDF2E1F7884F800C7E673 /* CheckoutRowView.swift */; };
+		632FDF311F78854B00C7E673 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDF301F78854B00C7E673 /* SettingsViewController.swift */; };
+		632FDF341F78A25900C7E673 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FDF331F78A25900C7E673 /* CheckoutViewController.swift */; };
 		677B06F879B2BDAC4CF4A4E9 /* Pods_QwkPassAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949A74ACF34F9255B4EBE9F4 /* Pods_QwkPassAppUITests.framework */; };
 		B3851BAC1F6C77BC00D8A8DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3851BAB1F6C77BC00D8A8DC /* AppDelegate.swift */; };
 		B3851BAE1F6C77BC00D8A8DC /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3851BAD1F6C77BC00D8A8DC /* LaunchViewController.swift */; };
@@ -47,6 +53,12 @@
 		1178621C9D0A99DFB219C32A /* Pods_QwkPassAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QwkPassAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18000553D955F58F6BEB0E81 /* Pods-QwkPassAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QwkPassAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QwkPassAppUITests/Pods-QwkPassAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2FF4293ABB5FE7B5914C8480 /* Pods-QwkPassApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QwkPassApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-QwkPassApp/Pods-QwkPassApp.release.xcconfig"; sourceTree = "<group>"; };
+		632FDF261F787D7300C7E673 /* StripeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StripeViewController.swift; sourceTree = "<group>"; };
+		632FDF281F787FDD00C7E673 /* MyAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAPIClient.swift; sourceTree = "<group>"; };
+		632FDF2C1F78848F00C7E673 /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		632FDF2E1F7884F800C7E673 /* CheckoutRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutRowView.swift; sourceTree = "<group>"; };
+		632FDF301F78854B00C7E673 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		632FDF331F78A25900C7E673 /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		82A10AD830205B55F0C91607 /* Pods-QwkPassAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QwkPassAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QwkPassAppTests/Pods-QwkPassAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		949A74ACF34F9255B4EBE9F4 /* Pods_QwkPassAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QwkPassAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEDB13C90EA957A5E54B9461 /* Pods_QwkPassApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QwkPassApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +125,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		632FDF321F78974600C7E673 /* Stripe */ = {
+			isa = PBXGroup;
+			children = (
+				632FDF2C1F78848F00C7E673 /* Buttons.swift */,
+				632FDF331F78A25900C7E673 /* CheckoutViewController.swift */,
+				632FDF281F787FDD00C7E673 /* MyAPIClient.swift */,
+				632FDF2E1F7884F800C7E673 /* CheckoutRowView.swift */,
+				632FDF261F787D7300C7E673 /* StripeViewController.swift */,
+				632FDF301F78854B00C7E673 /* SettingsViewController.swift */,
+			);
+			name = Stripe;
+			sourceTree = "<group>";
+		};
 		94D76DE5BECA3D72452D9373 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +178,7 @@
 		B3851BAA1F6C77BC00D8A8DC /* QwkPassApp */ = {
 			isa = PBXGroup;
 			children = (
+				632FDF321F78974600C7E673 /* Stripe */,
 				B39890671F78547100950FF8 /* Qwkpass Sketch */,
 				B3851BDB1F6C8F4E00D8A8DC /* Nunito */,
 				B3851BAB1F6C77BC00D8A8DC /* AppDelegate.swift */,
@@ -352,22 +378,26 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-QwkPassApp/Pods-QwkPassApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,10 +526,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632FDF2D1F78848F00C7E673 /* Buttons.swift in Sources */,
+				632FDF2F1F7884F800C7E673 /* CheckoutRowView.swift in Sources */,
+				632FDF271F787D7300C7E673 /* StripeViewController.swift in Sources */,
 				B3851BE21F6C9F7700D8A8DC /* RegisterViewController.swift in Sources */,
 				B3851BAE1F6C77BC00D8A8DC /* LaunchViewController.swift in Sources */,
 				B3BC56B71F7860F9001C2073 /* SplashScreenViewController.swift in Sources */,
 				B3851BAC1F6C77BC00D8A8DC /* AppDelegate.swift in Sources */,
+				632FDF291F787FDD00C7E673 /* MyAPIClient.swift in Sources */,
+				632FDF341F78A25900C7E673 /* CheckoutViewController.swift in Sources */,
+				632FDF311F78854B00C7E673 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
