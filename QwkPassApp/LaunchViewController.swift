@@ -21,6 +21,13 @@ class LaunchViewController: UIViewController {
         let loginButton = LoginButton(readPermissions: [ .publicProfile ])
         loginButton.center = view.center
         
+        
+        let screenSize:CGRect = UIScreen.main.bounds
+        let screenHeight = screenSize.height //real screen height
+        //let's suppose we want to have 10 points bottom margin
+        let newCenterY = screenHeight - loginButton.frame.height - 50
+        let newCenter = CGPoint(x:view.center.x, y:newCenterY)
+        loginButton.center = newCenter
         //adding it to view
         view.addSubview(loginButton)
         // Do any additional setup after loading the view, typically from a nib.
