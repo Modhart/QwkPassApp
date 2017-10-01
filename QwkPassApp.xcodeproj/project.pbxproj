@@ -183,6 +183,7 @@
 				B33222441F788D0A0001F7DC /* add-plus-button.png */,
 				B3851BB71F6C77BC00D8A8DC /* Info.plist */,
 				B3851BE11F6C9F7700D8A8DC /* RegisterViewController.swift */,
+				B397B0831F6F399D00B6C9C3 /* GoogleService-Info.plist */,
 			);
 			path = QwkPassApp;
 			sourceTree = "<group>";
