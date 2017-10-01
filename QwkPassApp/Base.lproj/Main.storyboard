@@ -176,7 +176,7 @@
                         <viewControllerLayoutGuide type="bottom" id="596-8w-cCW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VTP-we-aEr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aza-K9-MhM">
@@ -230,7 +230,7 @@
                         <viewControllerLayoutGuide type="bottom" id="EII-B1-1yr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2ES-NZ-Kpg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cja-tq-3hj">
@@ -276,7 +276,7 @@
                         <viewControllerLayoutGuide type="bottom" id="EGJ-dY-dmm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="t2m-Ou-31Q">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nw7-LR-Lam">
@@ -364,6 +364,24 @@
             </objects>
             <point key="canvasLocation" x="329" y="949"/>
         </scene>
+        <!--Auth Base View Controller-->
+        <scene sceneID="FA0-4t-8Tq">
+            <objects>
+                <viewController id="H9Y-Ql-Vfu" customClass="FUIAuthBaseViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EYW-jL-KIb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2nq-Uj-8QF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JGq-SJ-ryR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mMb-7f-M3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="329" y="1699"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="qyl-82-bwQ">
             <objects>
@@ -450,6 +468,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="RegButton:" destination="9zr-gm-H9D" eventType="touchUpInside" id="IyJ-58-Dxb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -471,6 +492,9 @@
                             <constraint firstItem="arb-qq-qu6" firstAttribute="top" secondItem="TMQ-bG-BYP" secondAttribute="bottom" constant="28" id="wAE-Ri-POp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Email" destination="TMQ-bG-BYP" id="Egx-KK-cd3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRo-YQ-4Xc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -490,6 +514,6 @@
         <image name="blue ticket" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KZ2-qx-GD3"/>
+        <segue reference="6K2-0l-OlI"/>
     </inferredMetricsTieBreakers>
 </document>
