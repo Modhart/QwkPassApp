@@ -1,17 +1,19 @@
 //
-//  RegisterViewController.swift
+//  RegisterBillingViewController.swift
 //  QwkPassApp
 //
-//  Created by Jay Bajaj on 9/15/17.
+//  Created by Jay Bajaj on 9/30/17.
 //  Copyright © 2017 Jay Bajaj. All rights reserved.
 //
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterBillingViewController: UIViewController {
 
+    //Text Fields
+    
 //    //Button
-//    @IBAction func nextbutton(_ sender: Any) {
+//    @IBAction func Register(_ sender: UIButton) {
 //    }
 //    
     override func viewDidLoad() {
@@ -25,6 +27,7 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+
     /*
     // MARK: - Navigation
 
