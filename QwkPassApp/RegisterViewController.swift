@@ -7,11 +7,9 @@
 //
 
 import UIKit
-import Firebase
 
 class RegisterViewController: UIViewController {
 
-    @IBOutlet weak var Email: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,22 +21,8 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    var handle: AuthStateDidChangeListenerHandle?
-    
-    override func viewWillAppear(_ animated: Bool) {
-        //Firebase - Listen for authentication state
-        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
-            // ....
-        }
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        Auth.auth().removeStateDidChangeListener(handle!)
-    }
-    
+
     @IBAction func RegButton(_ sender: UIButton) {
-        
-    
     }
     /*
     // MARK: - Navigation

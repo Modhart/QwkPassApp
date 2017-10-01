@@ -82,17 +82,17 @@ class LaunchViewController: UIViewController {
 
     
     @IBOutlet weak var Email: UITextField!
-
-    
     @IBOutlet weak var Password: UITextField!
     
+
     
     @IBAction func SignIn(_ sender: UIButton) {
-        
-        
-        
-        
+        Auth.auth().signIn(withEmail: Email.text!, password: Password.text!) { (users, error) in
+            // ...
+        }
+        performSegue(withIdentifier: "SignInSegue", sender: self)
     }
+    
     @IBAction func SignUp(_ sender: UIButton) {
     
     }
