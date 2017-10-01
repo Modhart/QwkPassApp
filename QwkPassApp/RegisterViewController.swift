@@ -10,6 +10,10 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+//    //Button
+//    @IBAction func nextbutton(_ sender: Any) {
+//    }
+//    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,9 +25,6 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    @IBAction func RegButton(_ sender: UIButton) {
-    }
     /*
     // MARK: - Navigation
 

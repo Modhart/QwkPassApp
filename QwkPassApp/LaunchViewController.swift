@@ -9,6 +9,7 @@
 import UIKit
 import FacebookLogin
 import FBSDKLoginKit
+import Firebase
 
 class LaunchViewController: UIViewController {
     
@@ -47,6 +48,20 @@ class LaunchViewController: UIViewController {
         }
     }
     
+    var handle: AuthStateDidChangeListenerHandle?
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //Firebase - Listen for authentication state
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            // ....
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        Auth.auth().removeStateDidChangeListener(handle!)
+    }
+    
+    
     //function is fetching the user data
     func getFBUserData(){
         if((FBSDKAccessToken.current()) != nil){
@@ -67,14 +82,17 @@ class LaunchViewController: UIViewController {
 
     
     @IBOutlet weak var Email: UITextField!
-
-    
     @IBOutlet weak var Password: UITextField!
     
+
     
     @IBAction func SignIn(_ sender: UIButton) {
-        
+        Auth.auth().signIn(withEmail: Email.text!, password: Password.text!) { (users, error) in
+            // ...
+        }
+        performSegue(withIdentifier: "SignInSegue", sender: self)
     }
+    
     @IBAction func SignUp(_ sender: UIButton) {
     
     }

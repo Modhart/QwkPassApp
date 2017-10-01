@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "644A3363F0F98994868768622C3FBA4B"
+               BlueprintIdentifier = "B5AC0425E8B92073B62752C5C470B156"
                BuildableName = "Pods_QwkPassApp.framework"
                BlueprintName = "Pods-QwkPassApp"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "644A3363F0F98994868768622C3FBA4B"
+            BlueprintIdentifier = "B5AC0425E8B92073B62752C5C470B156"
             BuildableName = "Pods_QwkPassApp.framework"
             BlueprintName = "Pods-QwkPassApp"
             ReferencedContainer = "container:Pods.xcodeproj">
