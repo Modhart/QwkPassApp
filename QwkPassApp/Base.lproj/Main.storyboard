@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ibd-uf-M1r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ibd-uf-M1r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -462,7 +462,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="6UQ-Ka-UZ2" kind="show" id="ebf-PO-Apu"/>
+                                    <action selector="NextButton:" destination="9zr-gm-H9D" eventType="touchUpInside" id="97h-zJ-2df"/>
+                                    <segue destination="6UQ-Ka-UZ2" kind="show" identifier="Reg_to_Reg_with_Billing" id="ebf-PO-Apu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -482,9 +483,6 @@
                             <constraint firstItem="arb-qq-qu6" firstAttribute="top" secondItem="TMQ-bG-BYP" secondAttribute="bottom" constant="28" id="wAE-Ri-POp"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="Email" destination="TMQ-bG-BYP" id="Egx-KK-cd3"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRo-YQ-4Xc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -535,7 +533,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="otZ-4Z-3Mc"/>
+                                    <action selector="RegisterButton:" destination="6UQ-Ka-UZ2" eventType="touchUpInside" id="LTT-EV-7w4"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="Registration_to_Sign_In" id="otZ-4Z-3Mc"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RW6-9N-wGL">
@@ -575,6 +574,7 @@
         <image name="blue ticket" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6K2-0l-OlI"/>
+        <segue reference="ebf-PO-Apu"/>
+        <segue reference="otZ-4Z-3Mc"/>
     </inferredMetricsTieBreakers>
 </document>

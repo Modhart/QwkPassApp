@@ -7,15 +7,21 @@
 //
 
 import UIKit
+import FBSDKLoginKit
+import Firebase
 
 class RegisterBillingViewController: UIViewController {
 
+    var emailPassed = ""
+    var passwordPassed = ""
+    
+    email.text = emailPassed
+    password.text = passwordPassed
+    //Work on this https://code.tutsplus.com/tutorials/ios-sdk-passing-data-between-controllers-in-swift--cms-27151
+    
+    
     //Text Fields
     
-//    //Button
-//    @IBAction func Register(_ sender: UIButton) {
-//    }
-//    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,7 +33,28 @@ class RegisterBillingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    var handle: AuthStateDidChangeListenerHandle?
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //Firebase - Listen for authentication state
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            // ....
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        Auth.auth().removeStateDidChangeListener(handle!)
+    }
+    @IBOutlet weak var Email_Registration: UITextField!
+    @IBOutlet weak var Password_Registration: UITextField!
+    
+    @IBAction func RegisterButton(_ sender: Any) {
+        Auth.auth().signIn(withEmail: email.text = emailPassed!, password: password.text = passwordPassed!) { (users, error) in
+            // ...
+        }
+        performSegue(withIdentifier: "Registration_to_Sign_In", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 
