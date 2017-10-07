@@ -75,27 +75,59 @@ class LaunchViewController: UIViewController {
         }
     }
     
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "SignInSegue" {
+            if authverified == false {
+                return false
+            }
+            else{
+                print("Sign in Segue will occur")
+                performSegue(withIdentifier: "SignInSegue", sender: self)
+            }
+        }
+        return true
+    }
     
     @IBOutlet weak var Email: UITextField!
     @IBOutlet weak var Password: UITextField!
     
+    var authverified = false
 
     
     @IBAction func SignIn(_ sender: UIButton) {
-        Auth.auth().signIn(withEmail: Email.text!, password: Password.text!) { (users, error) in
-            // ...
+        if let email = Email.text, let password = Password.text {
+            Auth.auth().signIn(withEmail: email, password: password) { (users, error) in
+                if let error = error {
+                    print(error.localizedDescription)
+                    return
+                }
+                
+                self.authverified = true
+                
+                self.shouldPerformSegue(withIdentifier: "SignInSegue", sender: self)
+                
+//                self.performSegue(withIdentifier: "SignInSegue", sender: self)
+                
+            }
         }
-        performSegue(withIdentifier: "SignInSegue", sender: self)
+        else {
+            print("Error loggin in no Email/Password specified")
+        }
+       
+        
     }
     
     @IBAction func SignUp(_ sender: UIButton) {
     
     }
+    
+    
 }
 
 

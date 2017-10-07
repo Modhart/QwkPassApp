@@ -182,6 +182,7 @@
 				B3851BB21F6C77BC00D8A8DC /* Assets.xcassets */,
 				B33222441F788D0A0001F7DC /* add-plus-button.png */,
 				B3851BB71F6C77BC00D8A8DC /* Info.plist */,
+				B3851BE11F6C9F7700D8A8DC /* RegisterViewController.swift */,
 			);
 			path = QwkPassApp;
 			sourceTree = "<group>";
