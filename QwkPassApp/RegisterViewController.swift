@@ -25,8 +25,20 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var Email_Registration: UITextField!
+    @IBOutlet weak var Password_Registration: UITextField!
+    
+    @IBAction func NextButton(_ sender: Any) {
+        let myVC = storyboard?.instantiateViewControllerWithIdentifier("RegistrationBillingViewController") as! SecondVC
+        myVC.emailPassed = Email_Registration.text!
+        myVC.passwordPassed = Password_Registration.text!
+        RegistrationBillingViewController?.pushViewController(myVC, animated: true)
+        
+        performSegue(withIdentifier: Reg_to_Reg_with_Billing, sender: self)
+    }
+
     /*
-    // MARK: - Navigation
+     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
