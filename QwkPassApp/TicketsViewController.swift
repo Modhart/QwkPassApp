@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 class TicketsViewController: UIViewController {
 
+    @IBOutlet weak var UserInfo: UILabel!
+    @IBOutlet weak var UserEmail: UILabel!
     @IBOutlet weak var TicketsNav: UINavigationBar!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +25,23 @@ class TicketsViewController: UIViewController {
         let barView = UIView(frame: CGRect(x:0, y:0, width:view.frame.width, height:UIApplication.shared.statusBarFrame.height))
         barView.backgroundColor = UIColor(red:0.27, green:0.56, blue:0.90, alpha:1.0)
         view.addSubview(barView)
+        
+        
+        if Auth.auth().currentUser != nil {
+            // User is signed in.
+            let user = Auth.auth().currentUser
+            if let user = user {
+                let uid = user.uid
+                self.UserInfo.text = uid
+                let email = user.email
+                self.UserEmail.text = email
+            }
+        }
+        else {
+            print("No User Info");
+            // No user is signed in.
+            // ...
+        }
         // Do any additional setup after loading the view.
     }
 

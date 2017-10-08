@@ -55,6 +55,7 @@ class LaunchViewController: UIViewController {
         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
             // ....
         }
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -111,9 +112,6 @@ class LaunchViewController: UIViewController {
                 self.authverified = true
                 
                 self.shouldPerformSegue(withIdentifier: "SignInSegue", sender: self)
-                
-//                self.performSegue(withIdentifier: "SignInSegue", sender: self)
-                
             }
         }
         else {

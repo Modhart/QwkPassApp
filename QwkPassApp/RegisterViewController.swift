@@ -16,7 +16,6 @@ class RegisterViewController: UIViewController {
 //    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -29,37 +28,38 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var Password_Registration: UITextField!
     @IBOutlet weak var Confpass_Registration: UITextField!
     
+    var authverified = false
     
     @IBAction func NextButton(_ sender: Any) {
-        if Email_Registration.text != "" {
-            performSegue(withIdentifier:"Reg_to_Reg_with_Billing", sender: self)
+        if Email_Registration.text != "" && Password_Registration.text != "" && Confpass_Registration.text != ""{
+            authverified = true
+            shouldPerformSegue(withIdentifier: "Reg_to_Reg_with_Billing", sender: self)
         }
-//
-        
-//        let myVC = storyboard?.instantiateViewController(withIdentifier: "RegistrationBillingViewController") as! RegisterBillingViewController
-//        myVC.emailPassed = Email_Registration.text!
-//        myVC.passwordPassed = Password_Registration.text!
-////        RegisterBillingViewController?.pushViewController(myVC, animated: true)
-////        
-        
+        else {
+            authverified = false
+        }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var secondcontroller = segue.destination as! RegisterBillingViewController
-        
-        secondcontroller.emailPassed = Email_Registration.text!
-        secondcontroller.passwordPassed = Password_Registration.text!
-        secondcontroller.confpassPassed = Confpass_Registration.text!
-        
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "Reg_to_Reg_with_Billing" {
+            if authverified == false {
+                return false
+            }
+            else{
+                print("Next Segue will occur")
+                performSegue(withIdentifier: "Reg_to_Reg_with_Billing", sender: self)
+            }
+        }
+        return true
     }
-    /*
-     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+            var secondcontroller = segue.destination as! RBVC
+        
+            secondcontroller.emailPassed = Email_Registration.text!
+            secondcontroller.passwordPassed = Password_Registration.text!
+            secondcontroller.confpassPassed = Confpass_Registration.text!
     }
-    */
 
 }

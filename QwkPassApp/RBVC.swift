@@ -10,7 +10,7 @@ import UIKit
 import FBSDKLoginKit
 import Firebase
 
-class RegisterBillingViewController: UIViewController {
+class RBVC: UIViewController {
 
     @IBOutlet weak var Email: UILabel!
     @IBOutlet weak var Pass: UILabel!
@@ -35,6 +35,7 @@ class RegisterBillingViewController: UIViewController {
         Email.text = emailPassed
         Pass.text = passwordPassed
         CPass.text = confpassPassed
+        
         // Do any additional setup after loading the view.
     }
 
@@ -66,6 +67,7 @@ class RegisterBillingViewController: UIViewController {
                 performSegue(withIdentifier: "Registration_to_Sign_In", sender: self)
             }
         }
+        
         return true
     }
     
@@ -80,12 +82,10 @@ class RegisterBillingViewController: UIViewController {
                 return
             }
             self.authverified = true
+            self.shouldPerformSegue(withIdentifier: "Registration_to_Sign_In", sender: self)
             print("\(user!.email!) created")
         }
         
-        self.shouldPerformSegue(withIdentifier: "Registration_to_Sign_In", sender: self)
-
-        //performSegue(withIdentifier: "Registration_to_Sign_In", sender: self)
     }
     
     /*
@@ -97,6 +97,8 @@ class RegisterBillingViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    //code needs to change below
     func showToast(message : String) {
         
         let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/80, y: self.view.frame.size.height-100, width: self.view.frame.size.width - 10, height: 35))
