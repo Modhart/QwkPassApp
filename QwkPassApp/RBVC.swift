@@ -16,10 +16,11 @@ class RBVC: UIViewController {
     @IBOutlet weak var Pass: UILabel!
     @IBOutlet weak var CPass: UILabel!
     
-    
+    var ref: DatabaseReference!
     var emailPassed = String()
     var passwordPassed = String()
     var confpassPassed = String()
+    var usernamePassed = String()
     
     
     //email.text = emailPassed
@@ -31,7 +32,7 @@ class RBVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         Email.text = emailPassed
         Pass.text = passwordPassed
         CPass.text = confpassPassed
@@ -84,6 +85,7 @@ class RBVC: UIViewController {
             self.authverified = true
             self.shouldPerformSegue(withIdentifier: "Registration_to_Sign_In", sender: self)
             print("\(user!.email!) created")
+            
         }
         
     }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterViewController: UIViewController {
 
@@ -25,6 +26,7 @@ class RegisterViewController: UIViewController {
     }
     
     @IBOutlet weak var Email_Registration: UITextField!
+    @IBOutlet weak var Username_Registration: UITextField!
     @IBOutlet weak var Password_Registration: UITextField!
     @IBOutlet weak var Confpass_Registration: UITextField!
     
@@ -60,6 +62,7 @@ class RegisterViewController: UIViewController {
             secondcontroller.emailPassed = Email_Registration.text!
             secondcontroller.passwordPassed = Password_Registration.text!
             secondcontroller.confpassPassed = Confpass_Registration.text!
+//            secondcontroller.unPassed = Username_Registration.text!
     }
 
 }

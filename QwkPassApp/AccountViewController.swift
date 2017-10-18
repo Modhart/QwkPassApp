@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class AccountViewController: UIViewController {
 
@@ -25,7 +26,11 @@ class AccountViewController: UIViewController {
         barView.backgroundColor = UIColor(red:0.27, green:0.56, blue:0.90, alpha:1.0)
         view.addSubview(barView)
         // Do any additional setup after loading the view.
+
     }
+    
+    
+    
     
 
     override func didReceiveMemoryWarning() {

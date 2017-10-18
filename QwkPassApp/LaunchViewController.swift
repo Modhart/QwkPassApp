@@ -14,7 +14,9 @@ import Firebase
 class LaunchViewController: UIViewController {
     
     var dict : [String : AnyObject]!
-
+    
+    var usernamePassed = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
