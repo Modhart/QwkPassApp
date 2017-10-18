@@ -11,7 +11,6 @@ import Firebase
 
 class TicketsViewController: UIViewController {
 
-    var ref: DatabaseReference!
     
     var usernamePassed = String()
 
@@ -40,8 +39,6 @@ class TicketsViewController: UIViewController {
                 self.UserInfo.text = uid
                 let email = user.email
                 self.UserEmail.text = email
-                ref = Database.database().reference()
-                self.ref.child("users").child(user.uid).setValue(["username": usernamePassed])
             }
            
         }

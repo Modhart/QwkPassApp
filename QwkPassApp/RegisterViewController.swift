@@ -25,6 +25,8 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
     @IBOutlet weak var Email_Registration: UITextField!
     @IBOutlet weak var Username_Registration: UITextField!
     @IBOutlet weak var Password_Registration: UITextField!
@@ -62,7 +64,7 @@ class RegisterViewController: UIViewController {
             secondcontroller.emailPassed = Email_Registration.text!
             secondcontroller.passwordPassed = Password_Registration.text!
             secondcontroller.confpassPassed = Confpass_Registration.text!
-//            secondcontroller.unPassed = Username_Registration.text!
+            secondcontroller.usernamePassed = Username_Registration.text!
     }
 
 }

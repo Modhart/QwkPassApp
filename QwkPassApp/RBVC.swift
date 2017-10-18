@@ -16,12 +16,14 @@ class RBVC: UIViewController {
     @IBOutlet weak var Pass: UILabel!
     @IBOutlet weak var CPass: UILabel!
     
-    var ref: DatabaseReference!
+    
+    
     var emailPassed = String()
     var passwordPassed = String()
     var confpassPassed = String()
     var usernamePassed = String()
     
+    var ref: DatabaseReference!
     
     //email.text = emailPassed
     //password.text = passwordPassed
@@ -76,6 +78,7 @@ class RBVC: UIViewController {
     var authverified = false
     
     @IBAction func RegisterButton(_ sender: Any) {
+        ref = Database.database().reference()
         Auth.auth().createUser(withEmail: emailPassed, password: passwordPassed) { (user, error) in
             if let error = error {
                 self.showToast(message: error.localizedDescription)
@@ -83,8 +86,11 @@ class RBVC: UIViewController {
                 return
             }
             self.authverified = true
+            self.ref.child("Users").child((user?.uid)!).child("Username").setValue(self.usernamePassed)
             self.shouldPerformSegue(withIdentifier: "Registration_to_Sign_In", sender: self)
             print("\(user!.email!) created")
+            
+            
             
         }
         

@@ -14,8 +14,7 @@ import Firebase
 class LaunchViewController: UIViewController {
     
     var dict : [String : AnyObject]!
-    
-    var usernamePassed = String()
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +50,8 @@ class LaunchViewController: UIViewController {
     }
     
     var handle: AuthStateDidChangeListenerHandle?
+    
+
     
     override func viewWillAppear(_ animated: Bool) {
         //Firebase - Listen for authentication state
@@ -90,6 +91,7 @@ class LaunchViewController: UIViewController {
                 return false
             }
             else{
+                
                 print("Sign in Segue will occur")
                 performSegue(withIdentifier: "SignInSegue", sender: self)
             }
@@ -112,7 +114,6 @@ class LaunchViewController: UIViewController {
                 }
                 
                 self.authverified = true
-                
                 self.shouldPerformSegue(withIdentifier: "SignInSegue", sender: self)
             }
         }
