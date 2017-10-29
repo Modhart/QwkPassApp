@@ -12,10 +12,10 @@ import Firebase
 
 class RBVC: UIViewController {
 
-    @IBOutlet weak var Email: UILabel!
-    @IBOutlet weak var Pass: UILabel!
-    @IBOutlet weak var CPass: UILabel!
-    
+//    @IBOutlet weak var Email: UILabel!
+//    @IBOutlet weak var Pass: UILabel!
+//    @IBOutlet weak var CPass: UILabel!
+//    
     
     
     var emailPassed = String()
@@ -35,9 +35,9 @@ class RBVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Email.text = emailPassed
-        Pass.text = passwordPassed
-        CPass.text = confpassPassed
+//        Email.text = emailPassed
+//        Pass.text = passwordPassed
+//        CPass.text = confpassPassed
         
         // Do any additional setup after loading the view.
     }

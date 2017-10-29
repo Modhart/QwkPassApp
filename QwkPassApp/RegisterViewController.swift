@@ -65,6 +65,7 @@ class RegisterViewController: UIViewController {
             secondcontroller.passwordPassed = Password_Registration.text!
             secondcontroller.confpassPassed = Confpass_Registration.text!
             secondcontroller.usernamePassed = Username_Registration.text!
+//            secondcontroller.unPassed = Username_Registration.text!
     }
 
 }
