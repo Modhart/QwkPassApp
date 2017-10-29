@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ibd-uf-M1r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="Ibd-uf-M1r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -22,22 +21,18 @@
         <scene sceneID="CHH-SE-WVK">
             <objects>
                 <viewController id="Ibd-uf-M1r" customClass="SplashScreenViewController" customModule="QwkPassApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2IR-oh-CKm"/>
-                        <viewControllerLayoutGuide type="bottom" id="w1h-eW-i4l"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="m84-pw-alX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="QwkPass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljj-99-poz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QwkPass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ljj-99-poz">
                                 <rect key="frame" x="49" y="291" width="277" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="65"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  Copyright © 2017 JBD. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="kYN-uK-c5Y">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright © 2017 JBD. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="kYN-uK-c5Y">
                                 <rect key="frame" x="20" y="615" width="335" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -48,51 +43,40 @@
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="showLoginScreen" id="6K2-0l-OlI"/>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="showLoginScreen" id="6K2-0l-OlI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17M-zi-0Re" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-866" y="139"/>
+            <point key="canvasLocation" x="-541.25" y="154.52166666666665"/>
         </scene>
         <!--Launch-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController title="Launch" id="BYZ-38-t0r" customClass="LaunchViewController" customModule="QwkPassApp" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QwkPass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sX7-Mf-Xud">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QwkPass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sX7-Mf-Xud">
                                 <rect key="frame" x="44" y="92" width="287" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="Uug-DB-ZTI"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="65"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cQ7-Ll-t9T">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" id="cQ7-Ll-t9T">
                                 <rect key="frame" x="44" y="205" width="282" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="MWt-8i-vNJ"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyf-ml-xoV">
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Dyf-ml-xoV">
                                 <rect key="frame" x="119" y="343" width="133" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="YuL-Rj-mqV"/>
-                                    <constraint firstAttribute="width" constant="133" id="fPp-Py-0ug"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                 <size key="titleShadowOffset" width="3" height="3"/>
                                 <state key="normal" title="Login">
@@ -105,24 +89,20 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="SignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7CH-7S-doC"/>
-                                    <segue destination="ier-Hj-2js" kind="show" identifier="SignInSegue" id="Pes-dF-4Vt"/>
+                                    <segue destination="ier-Hj-2js" kind="modal" identifier="SignInSegue" id="Pes-dF-4Vt"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uw0-oD-ICA">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" id="Uw0-oD-ICA">
                                 <rect key="frame" x="44" y="264" width="282" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="5tg-sT-jhd"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfK-8D-6L8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wfK-8D-6L8">
                                 <rect key="frame" x="119" y="435" width="133" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="133" id="XHr-E3-K20"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                 <state key="normal" title="Sign Up!">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -134,28 +114,13 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="SignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dL7-Cz-Gfn"/>
-                                    <segue destination="KWo-TN-qwe" kind="show" id="RrB-jc-mnD"/>
+                                    <segue destination="KWo-TN-qwe" kind="modal" id="RrB-jc-mnD"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="cQ7-Ll-t9T" firstAttribute="trailing" secondItem="Uw0-oD-ICA" secondAttribute="trailing" id="1jY-XN-Ca9"/>
-                            <constraint firstItem="sX7-Mf-Xud" firstAttribute="leading" secondItem="cQ7-Ll-t9T" secondAttribute="leading" id="5jZ-Ux-Gti"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wfK-8D-6L8" secondAttribute="bottom" constant="133" id="ATK-Rp-ma7"/>
-                            <constraint firstItem="Uw0-oD-ICA" firstAttribute="top" secondItem="cQ7-Ll-t9T" secondAttribute="bottom" constant="29" id="BiK-eA-BPO"/>
-                            <constraint firstItem="sX7-Mf-Xud" firstAttribute="centerX" secondItem="wfK-8D-6L8" secondAttribute="centerX" constant="2" id="Hex-ao-nH7"/>
-                            <constraint firstItem="wfK-8D-6L8" firstAttribute="top" secondItem="Dyf-ml-xoV" secondAttribute="bottom" constant="37" id="Jrv-FO-RLW"/>
-                            <constraint firstItem="sX7-Mf-Xud" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="72" id="RUf-Yl-ayl"/>
-                            <constraint firstItem="Uw0-oD-ICA" firstAttribute="centerX" secondItem="Dyf-ml-xoV" secondAttribute="centerX" id="Yi1-4D-ukO"/>
-                            <constraint firstItem="Dyf-ml-xoV" firstAttribute="top" secondItem="Uw0-oD-ICA" secondAttribute="bottom" constant="49" id="cNt-qp-LZw"/>
-                            <constraint firstItem="sX7-Mf-Xud" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="iXp-bs-73L"/>
-                            <constraint firstItem="sX7-Mf-Xud" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l1x-Mb-v36"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="cQ7-Ll-t9T" secondAttribute="trailing" constant="33" id="li7-2K-liu"/>
-                            <constraint firstItem="cQ7-Ll-t9T" firstAttribute="leading" secondItem="Uw0-oD-ICA" secondAttribute="leading" id="o88-az-GDd"/>
-                            <constraint firstItem="cQ7-Ll-t9T" firstAttribute="top" secondItem="sX7-Mf-Xud" secondAttribute="bottom" constant="61" id="qQB-gt-QwC"/>
-                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Nie-bN-mfp"/>
                     <connections>
                         <outlet property="Email" destination="cQ7-Ll-t9T" id="lJe-91-q5Z"/>
                         <outlet property="Password" destination="Uw0-oD-ICA" id="Q09-aO-8Gw"/>
@@ -163,21 +128,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-31.199999999999999" y="138.98050974512745"/>
+            <point key="canvasLocation" x="-19.5" y="154.5"/>
         </scene>
         <!--Maps-->
         <scene sceneID="PaS-cY-4ZY">
             <objects>
                 <viewController id="Ymm-nT-Qm8" customClass="MapsViewController" customModule="QwkPassApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MLT-Bd-oqx"/>
-                        <viewControllerLayoutGuide type="bottom" id="596-8w-cCW"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VTP-we-aEr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aza-K9-MhM">
+                            <navigationBar contentMode="scaleToFill" id="Aza-K9-MhM">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -189,7 +150,7 @@
                                     <navigationItem title="Maps" id="hyL-PN-2M3"/>
                                 </items>
                             </navigationBar>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ajb-yp-uPq">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="ajb-yp-uPq">
                                 <rect key="frame" x="16" y="79" width="343" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
@@ -201,7 +162,7 @@
                                     <action selector="mapSegmentedControl:" destination="Ymm-nT-Qm8" eventType="valueChanged" id="Mja-ou-0y6"/>
                                 </connections>
                             </segmentedControl>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BART_cc_map" translatesAutoresizingMaskIntoConstraints="NO" id="c7Q-8Y-oYd">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BART_cc_map" id="c7Q-8Y-oYd">
                                 <rect key="frame" x="16" y="115" width="343" height="495"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -217,21 +178,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2m9-Vw-riz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1718" y="-526"/>
+            <point key="canvasLocation" x="1073.75" y="-584.73666666666657"/>
         </scene>
         <!--Account-->
         <scene sceneID="Cbv-17-bJi">
             <objects>
                 <viewController id="vf8-cZ-vuW" customClass="AccountViewController" customModule="QwkPassApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Nlf-e9-D5P"/>
-                        <viewControllerLayoutGuide type="bottom" id="EII-B1-1yr"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2ES-NZ-Kpg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cja-tq-3hj">
+                            <navigationBar contentMode="scaleToFill" id="Cja-tq-3hj">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -243,7 +200,7 @@
                                     <navigationItem title="Account" id="8It-Kz-aYq"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nA-SE-2d2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2nA-SE-2d2">
                                 <rect key="frame" x="8" y="568" width="359" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
@@ -251,7 +208,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="KZ2-qx-GD3"/>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="KZ2-qx-GD3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -264,21 +221,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ea-rL-K8a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1718" y="-1397"/>
+            <point key="canvasLocation" x="1073.75" y="-1552.9983333333332"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="AEz-BS-Q5Z">
             <objects>
                 <viewController id="ZT5-l6-9nR" customClass="ScheduleViewController" customModule="QwkPassApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1bK-6T-vKQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="EGJ-dY-dmm"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="t2m-Ou-31Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nw7-LR-Lam">
+                            <navigationBar contentMode="scaleToFill" id="nw7-LR-Lam">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -290,11 +243,11 @@
                                     <navigationItem title="Schedule" id="5Gf-SF-bXY"/>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bart Schedule" translatesAutoresizingMaskIntoConstraints="NO" id="RXQ-YE-8c3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bart Schedule" id="RXQ-YE-8c3">
                                 <rect key="frame" x="16" y="117" width="343" height="493"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RkF-ko-jQY">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="RkF-ko-jQY">
                                 <rect key="frame" x="16" y="81" width="343" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
@@ -318,22 +271,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pEl-0M-eil" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1718" y="139"/>
+            <point key="canvasLocation" x="1073.75" y="154.52166666666665"/>
         </scene>
         <!--Tickets-->
         <scene sceneID="Hdz-yl-FON">
             <objects>
                 <viewController id="BhQ-R7-bZb" customClass="TicketsViewController" customModule="QwkPassApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pF9-pZ-Ar7"/>
-                        <viewControllerLayoutGuide type="bottom" id="5XA-NE-Mso"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xAb-aE-HFm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gub-gp-QD1">
+                            <navigationBar contentMode="scaleToFill" id="gub-gp-QD1">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="17"/>
@@ -343,35 +293,77 @@
                                     <navigationItem title="Tickets" id="RQW-LI-D8e"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdD-in-2R8">
-                                <rect key="frame" x="49" y="119" width="277" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="QR_Image" translatesAutoresizingMaskIntoConstraints="NO" id="VTg-GI-gvv">
-                                <rect key="frame" x="67" y="197" width="240" height="225"/>
+                            <view contentMode="scaleToFill" id="ljB-3U-guY">
+                                <rect key="frame" x="49" y="101" width="277" height="517"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKA-R5-Zau">
-                                <rect key="frame" x="49" y="484" width="277" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="-1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MdD-in-2R8">
+                                        <rect key="frame" x="0.0" y="46" width="277" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mKA-R5-Zau">
+                                        <rect key="frame" x="0.0" y="60" width="277" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My QwkPass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LVQ-yi-iZ8">
+                                        <rect key="frame" x="0.0" y="0.0" width="277" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="43"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view autoresizesSubviews="NO" contentMode="scaleToFill" id="spA-SA-3mC" customClass="UIButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="277" height="517"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aRp-Q5-lTR">
+                                                <rect key="frame" x="0.0" y="104" width="277" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QR_Image" id="6NY-J2-L5a">
+                                                <rect key="frame" x="18" y="146" width="240" height="225"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My QwkPass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8e5-Fo-D8s">
+                                                <rect key="frame" x="0.0" y="35" width="277" height="46"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="43"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" tag="-1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ark-8U-cj1">
+                                                <rect key="frame" x="0.0" y="89" width="277" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QR_Image" id="VTg-GI-gvv">
+                                        <rect key="frame" x="18" y="146" width="240" height="225"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="MdD-in-2R8" secondAttribute="trailing" constant="33" id="Tp3-g2-5Pq"/>
-                            <constraint firstItem="MdD-in-2R8" firstAttribute="top" secondItem="xAb-aE-HFm" secondAttribute="top" constant="119" id="W42-Ux-sNt"/>
-                            <constraint firstItem="5XA-NE-Mso" firstAttribute="top" secondItem="mKA-R5-Zau" secondAttribute="bottom" constant="56" id="bex-i5-bPu"/>
-                            <constraint firstAttribute="trailing" secondItem="gub-gp-QD1" secondAttribute="trailing" id="drY-AN-6Lv"/>
-                            <constraint firstItem="gub-gp-QD1" firstAttribute="leading" secondItem="xAb-aE-HFm" secondAttribute="leading" id="ePL-44-QdX"/>
-                            <constraint firstItem="mKA-R5-Zau" firstAttribute="trailing" secondItem="MdD-in-2R8" secondAttribute="trailing" id="kkP-yc-I4c"/>
-                            <constraint firstItem="MdD-in-2R8" firstAttribute="leading" secondItem="xAb-aE-HFm" secondAttribute="leadingMargin" constant="33" id="n1h-AE-Ude"/>
-                            <constraint firstItem="MdD-in-2R8" firstAttribute="top" secondItem="gub-gp-QD1" secondAttribute="bottom" constant="55" id="wJQ-US-Nb5"/>
-                            <constraint firstItem="mKA-R5-Zau" firstAttribute="leading" secondItem="MdD-in-2R8" secondAttribute="leading" id="z3c-kC-SFD"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tickets" image="blue ticket" selectedImage="black ticket" id="VcR-7y-wcv"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
@@ -379,14 +371,15 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
                         <outlet property="QR_Image" destination="VTg-GI-gvv" id="ht7-ET-VLJ"/>
+                        <outlet property="Ticket_Background" destination="spA-SA-3mC" id="uKa-lc-kym"/>
                         <outlet property="TicketsNav" destination="gub-gp-QD1" id="r7e-ez-tqi"/>
-                        <outlet property="UserEmail" destination="mKA-R5-Zau" id="zcx-s4-SNi"/>
-                        <outlet property="UserInfo" destination="MdD-in-2R8" id="0nq-Po-sUn"/>
+                        <outlet property="UserEmail" destination="aRp-Q5-lTR" id="Mn2-Kx-fbS"/>
+                        <outlet property="UserInfo" destination="Ark-8U-cj1" id="JWj-Y5-U8l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DMx-St-eGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1863.2" y="866.71664167916049"/>
+            <point key="canvasLocation" x="1164.5" y="963.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="qyl-82-bwQ">
@@ -408,62 +401,56 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncZ-H6-hMl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="924" y="139"/>
+            <point key="canvasLocation" x="577.5" y="154.52166666666665"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="3Ug-f1-eFM">
             <objects>
                 <viewController id="9zr-gm-H9D" customClass="RegisterViewController" customModule="QwkPassApp" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NtX-AP-nvK"/>
-                        <viewControllerLayoutGuide type="bottom" id="w01-IQ-API"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LLP-eM-zNd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="QwkPass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yN-x6-b2q">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QwkPass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4yN-x6-b2q">
                                 <rect key="frame" x="44" y="108" width="287" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="7SP-uC-uIq"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="65"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TMQ-bG-BYP">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" id="TMQ-bG-BYP">
                                 <rect key="frame" x="43" y="249" width="282" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Etu-aG-229">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" id="Etu-aG-229">
                                 <rect key="frame" x="43" y="287" width="282" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="arb-qq-qu6">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" id="arb-qq-qu6">
                                 <rect key="frame" x="44" y="325" width="281" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v7n-5c-nAn">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="center" minimumFontSize="17" id="v7n-5c-nAn">
                                 <rect key="frame" x="43" y="363" width="282" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQg-Rd-kML">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LQg-Rd-kML">
                                 <rect key="frame" x="146" y="443" width="83" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="83" id="dHO-pb-4du"/>
-                                    <constraint firstAttribute="height" constant="50" id="ht3-jI-mZ4"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -479,22 +466,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="TMQ-bG-BYP" secondAttribute="trailing" constant="34" id="4bP-ih-hQM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4yN-x6-b2q" secondAttribute="trailing" constant="27" id="7Xj-JT-JNp"/>
-                            <constraint firstItem="v7n-5c-nAn" firstAttribute="top" secondItem="arb-qq-qu6" secondAttribute="bottom" constant="8" id="CGn-px-o0N"/>
-                            <constraint firstItem="TMQ-bG-BYP" firstAttribute="trailing" secondItem="v7n-5c-nAn" secondAttribute="trailing" id="DzE-jv-JYI"/>
-                            <constraint firstItem="4yN-x6-b2q" firstAttribute="leading" secondItem="LLP-eM-zNd" secondAttribute="leadingMargin" constant="29" id="GwM-L2-Tdt"/>
-                            <constraint firstItem="TMQ-bG-BYP" firstAttribute="leading" secondItem="v7n-5c-nAn" secondAttribute="leading" id="Lzt-Ot-5QA"/>
-                            <constraint firstItem="4yN-x6-b2q" firstAttribute="leading" secondItem="TMQ-bG-BYP" secondAttribute="leading" constant="2" id="RMl-Qu-4NP"/>
-                            <constraint firstItem="w01-IQ-API" firstAttribute="top" secondItem="LQg-Rd-kML" secondAttribute="bottom" constant="182" id="XgS-1s-4CH"/>
-                            <constraint firstItem="4yN-x6-b2q" firstAttribute="centerX" secondItem="LQg-Rd-kML" secondAttribute="centerX" constant="4" id="aI1-rH-VkC"/>
-                            <constraint firstItem="arb-qq-qu6" firstAttribute="leading" secondItem="LLP-eM-zNd" secondAttribute="leadingMargin" constant="28" id="d65-uD-FvV"/>
-                            <constraint firstItem="arb-qq-qu6" firstAttribute="centerX" secondItem="LLP-eM-zNd" secondAttribute="centerX" constant="-3" id="fqT-iN-6Yv"/>
-                            <constraint firstItem="4yN-x6-b2q" firstAttribute="top" secondItem="NtX-AP-nvK" secondAttribute="bottom" constant="72" id="lGt-GQ-581"/>
-                            <constraint firstItem="TMQ-bG-BYP" firstAttribute="top" secondItem="4yN-x6-b2q" secondAttribute="bottom" constant="61" id="tXZ-Ra-gWB"/>
-                            <constraint firstItem="arb-qq-qu6" firstAttribute="top" secondItem="TMQ-bG-BYP" secondAttribute="bottom" constant="46" id="wff-hr-nax"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bT9-E5-H4F"/>
                     <connections>
@@ -502,58 +473,60 @@
                         <outlet property="Email_Registration" destination="TMQ-bG-BYP" id="F01-wx-LcS"/>
                         <outlet property="Password_Registration" destination="arb-qq-qu6" id="7Ub-nP-70b"/>
                         <outlet property="Username_Registration" destination="Etu-aG-229" id="YeP-pZ-RBW"/>
-                        <segue destination="6UQ-Ka-UZ2" kind="show" identifier="Reg_to_Reg_with_Billing" id="HCc-8s-j0a"/>
+                        <segue destination="6UQ-Ka-UZ2" kind="push" identifier="Reg_to_Reg_with_Billing" id="HCc-8s-j0a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRo-YQ-4Xc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1930" y="867"/>
+            <point key="canvasLocation" x="-1206.25" y="963.81499999999994"/>
         </scene>
         <!--RBVC-->
         <scene sceneID="lhl-vf-eyp">
             <objects>
                 <viewController id="6UQ-Ka-UZ2" customClass="RBVC" customModule="QwkPassApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SK0-yT-loT"/>
-                        <viewControllerLayoutGuide type="bottom" id="DXg-01-rWP"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Yux-rA-c46">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name on Card" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TOi-zJ-W9I">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name on Card" textAlignment="natural" minimumFontSize="17" id="TOi-zJ-W9I">
                                 <rect key="frame" x="77" y="233" width="235" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2x3-xj-kwN">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card Number" textAlignment="natural" minimumFontSize="17" id="2x3-xj-kwN">
                                 <rect key="frame" x="77" y="271" width="235" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVC" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4rX-jj-hkI">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVC" textAlignment="center" minimumFontSize="17" id="4rX-jj-hkI">
                                 <rect key="frame" x="158" y="308" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RW6-9N-wGL">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip Code" textAlignment="natural" minimumFontSize="17" id="RW6-9N-wGL">
                                 <rect key="frame" x="224" y="308" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QwkPass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1u-Eb-ttX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QwkPass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f1u-Eb-ttX">
                                 <rect key="frame" x="44" y="152" width="287" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="65"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnG-kn-j5z">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UnG-kn-j5z">
                                 <rect key="frame" x="155" y="434" width="64" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <state key="normal" title="Register">
@@ -566,42 +539,18 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="RegisterButton:" destination="6UQ-Ka-UZ2" eventType="touchUpInside" id="LTT-EV-7w4"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="Registration_to_Sign_In" id="otZ-4Z-3Mc"/>
+                                    <segue destination="BYZ-38-t0r" kind="push" identifier="Registration_to_Sign_In" id="otZ-4Z-3Mc"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM/DD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Box-y4-qZW">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM/DD" textAlignment="natural" minimumFontSize="17" id="Box-y4-qZW">
                                 <rect key="frame" x="77" y="308" width="73" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="73" id="U2g-Ma-IrG"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="TOi-zJ-W9I" firstAttribute="trailing" secondItem="2x3-xj-kwN" secondAttribute="trailing" id="1p3-LB-Nuw"/>
-                            <constraint firstItem="Box-y4-qZW" firstAttribute="leading" secondItem="2x3-xj-kwN" secondAttribute="leading" id="44A-fC-DPk"/>
-                            <constraint firstItem="UnG-kn-j5z" firstAttribute="top" secondItem="RW6-9N-wGL" secondAttribute="bottom" constant="96" id="8IU-wa-hl5"/>
-                            <constraint firstItem="TOi-zJ-W9I" firstAttribute="centerX" secondItem="Yux-rA-c46" secondAttribute="centerX" constant="7" id="BYw-dl-JZI"/>
-                            <constraint firstItem="Box-y4-qZW" firstAttribute="leading" secondItem="RW6-9N-wGL" secondAttribute="leading" constant="-147" id="IgR-pA-bnq"/>
-                            <constraint firstItem="4rX-jj-hkI" firstAttribute="trailing" secondItem="RW6-9N-wGL" secondAttribute="trailing" constant="-96" id="MoK-OZ-1Ck"/>
-                            <constraint firstItem="f1u-Eb-ttX" firstAttribute="top" secondItem="SK0-yT-loT" secondAttribute="bottom" constant="88" id="Msf-i8-9ql"/>
-                            <constraint firstItem="TOi-zJ-W9I" firstAttribute="top" secondItem="Yux-rA-c46" secondAttribute="top" constant="233" id="SIc-df-L2y"/>
-                            <constraint firstItem="f1u-Eb-ttX" firstAttribute="centerX" secondItem="UnG-kn-j5z" secondAttribute="centerX" constant="0.5" id="WAE-II-Y9g"/>
-                            <constraint firstItem="TOi-zJ-W9I" firstAttribute="leading" secondItem="2x3-xj-kwN" secondAttribute="leading" id="WQi-41-HSe"/>
-                            <constraint firstItem="2x3-xj-kwN" firstAttribute="trailing" secondItem="4rX-jj-hkI" secondAttribute="trailing" constant="96" id="aHz-j8-LtM"/>
-                            <constraint firstItem="f1u-Eb-ttX" firstAttribute="leading" secondItem="Yux-rA-c46" secondAttribute="leadingMargin" constant="28" id="b9E-Jk-F4f"/>
-                            <constraint firstItem="Box-y4-qZW" firstAttribute="top" secondItem="2x3-xj-kwN" secondAttribute="bottom" constant="7" id="bs4-OP-15N"/>
-                            <constraint firstItem="RW6-9N-wGL" firstAttribute="top" secondItem="4rX-jj-hkI" secondAttribute="bottom" constant="-30" id="dKi-2H-Rg4"/>
-                            <constraint firstItem="4rX-jj-hkI" firstAttribute="leading" secondItem="Box-y4-qZW" secondAttribute="trailing" constant="8" id="f9m-Qg-hpI"/>
-                            <constraint firstItem="TOi-zJ-W9I" firstAttribute="top" secondItem="f1u-Eb-ttX" secondAttribute="bottom" constant="58" id="iy5-q2-PXV"/>
-                            <constraint firstItem="2x3-xj-kwN" firstAttribute="top" secondItem="TOi-zJ-W9I" secondAttribute="bottom" constant="8" symbolic="YES" id="jB7-FG-mm4"/>
-                            <constraint firstItem="Box-y4-qZW" firstAttribute="baseline" secondItem="4rX-jj-hkI" secondAttribute="baseline" id="siU-w2-zBq"/>
-                            <constraint firstItem="RW6-9N-wGL" firstAttribute="centerX" secondItem="UnG-kn-j5z" secondAttribute="centerX" constant="81" id="yXo-tk-Ef3"/>
-                            <constraint firstItem="TOi-zJ-W9I" firstAttribute="leading" secondItem="Yux-rA-c46" secondAttribute="leadingMargin" constant="61" id="zLO-iD-eDc"/>
-                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="sY5-jX-h5w"/>
@@ -609,7 +558,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rUQ-GX-xWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1930.4000000000001" y="1674.5127436281859"/>
+            <point key="canvasLocation" x="-1206.5" y="1861.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bGk-HE-4WW">
@@ -627,7 +576,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Q6-Q0-fit" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2953" y="867"/>
+            <point key="canvasLocation" x="-1845.625" y="963.81499999999994"/>
         </scene>
     </scenes>
     <resources>
@@ -644,6 +593,7 @@
         <image name="blue ticket" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="otZ-4Z-3Mc"/>
+        <segue reference="Pes-dF-4Vt"/>
+        <segue reference="KZ2-qx-GD3"/>
     </inferredMetricsTieBreakers>
 </document>
