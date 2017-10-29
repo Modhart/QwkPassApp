@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ibd-uf-M1r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A365" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ibd-uf-M1r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -552,14 +552,14 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QwkPass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1u-Eb-ttX">
-                                <rect key="frame" x="44" y="108" width="287" height="67"/>
+                                <rect key="frame" x="44" y="152" width="287" height="23"/>
                                 <color key="tintColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="65"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnG-kn-j5z">
-                                <rect key="frame" x="140" y="434" width="94" height="56"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnG-kn-j5z">
+                                <rect key="frame" x="155" y="434" width="64" height="36"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <state key="normal" title="Register">
@@ -610,18 +610,7 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="sY5-jX-h5w">
-                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="rewind" id="MIR-Zu-jwF">
-                            <connections>
-                                <segue destination="9zr-gm-H9D" kind="show" id="7kU-fz-e3A"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Cancel Sign Up" id="ZSU-FC-0m4">
-                            <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="4E8-4N-bZI"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="sY5-jX-h5w"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rUQ-GX-xWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -631,6 +620,7 @@
         <!--Navigation Controller-->
         <scene sceneID="bGk-HE-4WW">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Q6-Q0-fit" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KWo-TN-qwe" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PrW-gP-DbN">
@@ -642,7 +632,6 @@
                         <segue destination="9zr-gm-H9D" kind="relationship" relationship="rootViewController" id="qrw-Rr-3po"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3Q6-Q0-fit" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2953" y="867"/>
         </scene>
@@ -660,7 +649,6 @@
         <image name="blue ticket" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7kU-fz-e3A"/>
-        <segue reference="4E8-4N-bZI"/>
+        <segue reference="otZ-4Z-3Mc"/>
     </inferredMetricsTieBreakers>
 </document>
