@@ -18,6 +18,8 @@ class TicketsViewController: UIViewController {
     @IBOutlet weak var UserInfo: UILabel!
     @IBOutlet weak var UserEmail: UILabel!
     @IBOutlet weak var TicketsNav: UINavigationBar!
+    @IBOutlet weak var QR_Image: UIImageView!
+    @IBOutlet weak var Ticket_Background: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,6 +41,16 @@ class TicketsViewController: UIViewController {
                 self.UserInfo.text = uid
                 let email = user.email
                 self.UserEmail.text = email
+                
+                let data = uid.data(using: .ascii, allowLossyConversion: false) //takes our text and encodes to ascii encoding
+                let filter = CIFilter(name: "CIQRCodeGenerator")  //can switch this between QR code or Bar code
+                filter?.setValue(data, forKey: "inputMessage")
+                let transform = CGAffineTransform(scaleX: 15, y: 15)
+                
+                let img = UIImage(ciImage: (filter?.outputImage?.applying(transform))!)   //creates an image based on the
+                
+                QR_Image.image = img
+            
             }
            
         }
@@ -48,8 +60,10 @@ class TicketsViewController: UIViewController {
             // ...
         }
         // Do any additional setup after loading the view.
+       // self.Ticket_Background.layer.cornerRadius = 30
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
