@@ -343,43 +343,33 @@
                                     <navigationItem title="Tickets" id="RQW-LI-D8e"/>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdD-in-2R8">
+                                <rect key="frame" x="49" y="119" width="277" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="QR_Image" translatesAutoresizingMaskIntoConstraints="NO" id="VTg-GI-gvv">
+                                <rect key="frame" x="67" y="197" width="240" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKA-R5-Zau">
-                                <rect key="frame" x="47" y="567" width="277" height="21"/>
+                                <rect key="frame" x="49" y="484" width="277" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdD-in-2R8">
-                                <rect key="frame" x="47" y="77" width="277" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWE-vS-3ff">
-                                <rect key="frame" x="47" y="149" width="277" height="320"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
-                                <state key="normal" title="Q">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="QR_Ticket" destination="BhQ-R7-bZb" eventType="touchUpInside" id="wPG-T9-hjk"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="MdD-in-2R8" secondAttribute="trailing" constant="35" id="Tp3-g2-5Pq"/>
-                            <constraint firstItem="MdD-in-2R8" firstAttribute="top" secondItem="xAb-aE-HFm" secondAttribute="top" constant="101" id="W42-Ux-sNt"/>
-                            <constraint firstItem="gub-gp-QD1" firstAttribute="centerX" secondItem="HWE-vS-3ff" secondAttribute="centerX" id="XdX-rh-ety"/>
-                            <constraint firstItem="mKA-R5-Zau" firstAttribute="top" secondItem="HWE-vS-3ff" secondAttribute="bottom" constant="47" id="Ymq-gs-R6g"/>
-                            <constraint firstItem="5XA-NE-Mso" firstAttribute="top" secondItem="mKA-R5-Zau" secondAttribute="bottom" constant="81" id="bex-i5-bPu"/>
-                            <constraint firstItem="HWE-vS-3ff" firstAttribute="top" secondItem="MdD-in-2R8" secondAttribute="bottom" constant="27" id="cCr-Ck-wLW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MdD-in-2R8" secondAttribute="trailing" constant="33" id="Tp3-g2-5Pq"/>
+                            <constraint firstItem="MdD-in-2R8" firstAttribute="top" secondItem="xAb-aE-HFm" secondAttribute="top" constant="119" id="W42-Ux-sNt"/>
+                            <constraint firstItem="5XA-NE-Mso" firstAttribute="top" secondItem="mKA-R5-Zau" secondAttribute="bottom" constant="56" id="bex-i5-bPu"/>
                             <constraint firstAttribute="trailing" secondItem="gub-gp-QD1" secondAttribute="trailing" id="drY-AN-6Lv"/>
                             <constraint firstItem="gub-gp-QD1" firstAttribute="leading" secondItem="xAb-aE-HFm" secondAttribute="leading" id="ePL-44-QdX"/>
                             <constraint firstItem="mKA-R5-Zau" firstAttribute="trailing" secondItem="MdD-in-2R8" secondAttribute="trailing" id="kkP-yc-I4c"/>
-                            <constraint firstItem="MdD-in-2R8" firstAttribute="leading" secondItem="xAb-aE-HFm" secondAttribute="leadingMargin" constant="31" id="n1h-AE-Ude"/>
-                            <constraint firstItem="MdD-in-2R8" firstAttribute="top" secondItem="gub-gp-QD1" secondAttribute="bottom" constant="37" id="wJQ-US-Nb5"/>
+                            <constraint firstItem="MdD-in-2R8" firstAttribute="leading" secondItem="xAb-aE-HFm" secondAttribute="leadingMargin" constant="33" id="n1h-AE-Ude"/>
+                            <constraint firstItem="MdD-in-2R8" firstAttribute="top" secondItem="gub-gp-QD1" secondAttribute="bottom" constant="55" id="wJQ-US-Nb5"/>
                             <constraint firstItem="mKA-R5-Zau" firstAttribute="leading" secondItem="MdD-in-2R8" secondAttribute="leading" id="z3c-kC-SFD"/>
                         </constraints>
                     </view>
@@ -388,7 +378,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
-                        <outlet property="QRImage" destination="HWE-vS-3ff" id="8Di-hC-2Jy"/>
+                        <outlet property="QR_Image" destination="VTg-GI-gvv" id="ht7-ET-VLJ"/>
                         <outlet property="TicketsNav" destination="gub-gp-QD1" id="r7e-ez-tqi"/>
                         <outlet property="UserEmail" destination="mKA-R5-Zau" id="zcx-s4-SNi"/>
                         <outlet property="UserInfo" destination="MdD-in-2R8" id="0nq-Po-sUn"/>
@@ -643,6 +633,7 @@
     <resources>
         <image name="BART_cc_map" width="2059" height="1971"/>
         <image name="Bart Schedule" width="414" height="553"/>
+        <image name="QR_Image" width="16" height="16"/>
         <image name="black account" width="30" height="30"/>
         <image name="black maps" width="30" height="30"/>
         <image name="black schedule" width="28" height="30"/>
