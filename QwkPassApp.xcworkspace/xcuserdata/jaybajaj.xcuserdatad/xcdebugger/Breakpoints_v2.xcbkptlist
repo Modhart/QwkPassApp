@@ -88,11 +88,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QwkPassApp/LaunchViewController.swift"
-            timestampString = "530009670.604505"
+            timestampString = "530956338.875108"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "SignIn(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -104,13 +104,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QwkPassApp/LaunchViewController.swift"
-            timestampString = "530009670.604505"
+            timestampString = "530956338.875108"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "SignIn(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QwkPassApp/RBVC.swift"
+            timestampString = "530967368.521282"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "RegisterButton(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QwkPassApp.RBVC.RegisterButton (Any) -&gt; ()"
+                  moduleName = "QwkPassApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaybajaj/Desktop/QwkPassApp/QwkPassApp/RBVC.swift"
+                  timestampString = "530960329.004847"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "539">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QwkPassApp.RBVC.(RegisterButton (Any) -&gt; ()).(closure #1)"
+                  moduleName = "QwkPassApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaybajaj/Desktop/QwkPassApp/QwkPassApp/RBVC.swift"
+                  timestampString = "530960329.006394"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "2582">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

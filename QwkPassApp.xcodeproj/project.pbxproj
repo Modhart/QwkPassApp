@@ -22,6 +22,7 @@
 		B3851BDE1F6C8FF900D8A8DC /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3851BDD1F6C8FF900D8A8DC /* Nunito-Regular.ttf */; };
 		B3851BE21F6C9F7700D8A8DC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3851BE11F6C9F7700D8A8DC /* RegisterViewController.swift */; };
 		B3851BE41F6CA3DA00D8A8DC /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3851BE31F6CA3DA00D8A8DC /* Nunito-Bold.ttf */; };
+		B386C45C1FA5F2D80018C743 /* ManageUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386C45B1FA5F2D80018C743 /* ManageUserInfoViewController.swift */; };
 		B397B0841F6F399D00B6C9C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B397B0831F6F399D00B6C9C3 /* GoogleService-Info.plist */; };
 		B3BC56B51F785EB6001C2073 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3BC56B41F785EB6001C2073 /* Launch Screen.storyboard */; };
 		B3BC56B71F7860F9001C2073 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BC56B61F7860F9001C2073 /* SplashScreenViewController.swift */; };
@@ -75,6 +76,7 @@
 		B3851BDD1F6C8FF900D8A8DC /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nunito-Regular.ttf"; path = "QwkPassApp/Nunito/Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		B3851BE11F6C9F7700D8A8DC /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B3851BE31F6CA3DA00D8A8DC /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nunito-Bold.ttf"; path = "QwkPassApp/Nunito/Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		B386C45B1FA5F2D80018C743 /* ManageUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageUserInfoViewController.swift; sourceTree = "<group>"; };
 		B397B0831F6F399D00B6C9C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "QwkPassApp/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B3BC56B41F785EB6001C2073 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		B3BC56B61F7860F9001C2073 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				B33222421F788C330001F7DC /* Qwkpass Sketch 4 */,
 				B3851BDB1F6C8F4E00D8A8DC /* Nunito */,
 				B3851BAF1F6C77BC00D8A8DC /* Main.storyboard */,
+				B386C45B1FA5F2D80018C743 /* ManageUserInfoViewController.swift */,
 				B3851BAB1F6C77BC00D8A8DC /* AppDelegate.swift */,
 				B3851BAD1F6C77BC00D8A8DC /* LaunchViewController.swift */,
 				B3851BE11F6C9F7700D8A8DC /* RegisterViewController.swift */,
@@ -533,6 +536,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B386C45C1FA5F2D80018C743 /* ManageUserInfoViewController.swift in Sources */,
 				B3851BE21F6C9F7700D8A8DC /* RegisterViewController.swift in Sources */,
 				B3CBD3B01F7888BF00DB28F5 /* TicketsViewController.swift in Sources */,
 				B3CBD3B61F7888ED00DB28F5 /* AccountViewController.swift in Sources */,

@@ -23,6 +23,16 @@ class RBVC: UIViewController {
     var confpassPassed = String()
     var usernamePassed = String()
     
+    @IBOutlet weak var NameOnCard: UITextField!
+    @IBOutlet weak var CardNumber: UITextField!
+    @IBOutlet weak var Expiry: UITextField!
+    @IBOutlet weak var CVV: UITextField!
+    @IBOutlet weak var ZipCode: UITextField!
+    @IBOutlet weak var StreetName: UITextField!
+    @IBOutlet weak var City: UITextField!
+    @IBOutlet weak var State: UITextField!
+    
+    
     var ref: DatabaseReference!
     
     //email.text = emailPassed
@@ -86,7 +96,33 @@ class RBVC: UIViewController {
                 return
             }
             self.authverified = true
+            
+//            
+//           let key = self.ref.child("Users").childByAutoId().key
+//           let post = ["username": self.usernamePassed]
+//            let childUpdates = ["/posts/\(key)": post,
+//                    "/user-posts/\(String(describing: user?.uid))!/\(key)/": post]
+//            self.ref.updateChildValues(childUpdates)
+            
+            
             self.ref.child("Users").child((user?.uid)!).child("Username").setValue(self.usernamePassed)
+            self.ref.child("Users").child((user?.uid)!).child("Card Info").child("Name on Card").setValue(self.NameOnCard.text!)
+            self.ref.child("Users").child((user?.uid)!).child("Card Info").child("Card Number").setValue(self.CardNumber.text!)
+            self.ref.child("Users").child((user?.uid)!).child("Card Info").child("Expiry Date").setValue(self.Expiry.text!)
+            self.ref.child("Users").child((user?.uid)!).child("Card Info").child("CVV Code").setValue(self.CVV.text!)
+            
+//            self.ref.child("Users").child((user?.uid)!).child("Card Info").child("Zip Code").setValue(self.ZipCode.text!)
+            
+                self.ref.child("Users").child((user?.uid)!).child("Card Info").child("Billing Adress").child("Street Name").setValue(self.StreetName.text!)
+            
+            self.ref.child("Users").child((user?.uid)!).child("Card Info").child("Billing Adress").child("City").setValue(self.City.text!)
+            
+            self.ref.child("Users").child((user?.uid)!).child("Card Info").child("Billing Adress").child("State").setValue(self.State.text!)
+            
+            self.ref.child("Users").child((user?.uid)!).child("Card Info").child("Billing Adress").child("Zip Code").setValue(self.ZipCode.text!)
+            
+            
+            
             self.shouldPerformSegue(withIdentifier: "Registration_to_Sign_In", sender: self)
             print("\(user!.email!) created")
             
