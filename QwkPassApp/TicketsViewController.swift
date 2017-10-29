@@ -18,6 +18,7 @@ class TicketsViewController: UIViewController {
     @IBOutlet weak var UserInfo: UILabel!
     @IBOutlet weak var UserEmail: UILabel!
     @IBOutlet weak var TicketsNav: UINavigationBar!
+    @IBOutlet weak var QRImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,6 +49,24 @@ class TicketsViewController: UIViewController {
             // ...
         }
         // Do any additional setup after loading the view.
+    }
+
+    @IBAction func QR_Ticket() {
+        if Auth.auth().currentUser != nil {
+            // User is signed in.
+            let user = Auth.auth().currentUser
+            if let user = user {
+                let uid = user.uid
+                let data = uid.data(using: .ascii, allowLossyConversion: false) //takes our text and encodes to ascii encoding
+                let filter = CIFilter(name: "CIQRCodeGenerator")  //can switch this between QR code or Bar code
+                filter?.setValue(data, forKey: "inputMessage")
+                let transform = CGAffineTransform(scaleX: 1, y: 1)
+                
+                let img = UIImage(ciImage: (filter?.outputImage?.applying(transform))!)   //creates an image based on the
+                
+                QRImage.image = img
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
