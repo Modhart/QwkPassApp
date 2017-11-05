@@ -13,15 +13,17 @@ class AccountViewController: UIViewController {
 
     @IBOutlet weak var AccountNav: UINavigationBar!
     
-    @IBAction func ManageUserInfo(_ sender: UIButton) {
+    
+    @IBAction func ManageUserInfo(_ sender: Any) {
         performSegue(withIdentifier: "ManageUserInfo", sender: self)
     }
     
-    @IBAction func ManagePaymentInfo(_ sender: UIButton) {
+    
+    @IBAction func ManagePaymentInfo(_ sender: Any) {
         performSegue(withIdentifier: "ManagePaymentInfo", sender: self)
     }
-       
-    
+  
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

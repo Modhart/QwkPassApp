@@ -161,5 +161,83 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "QwkPassApp/ManageUserInfoViewController.swift"
+            timestampString = "531539269.943867"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "ManageUserInfoViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QwkPassApp.ManageUserInfoViewController.ConfirmPassEdit.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "QwkPassApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaybajaj/Desktop/QwkPassApp/QwkPassApp/ManageUserInfoViewController.swift"
+                  timestampString = "531539270.56626"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QwkPassApp.ManageUserInfoViewController.ConfirmPassEdit.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "QwkPassApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaybajaj/Desktop/QwkPassApp/QwkPassApp/ManageUserInfoViewController.swift"
+                  timestampString = "531539270.568873"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QwkPassApp.ManageUserInfoViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; QwkPassApp.ManageUserInfoViewController"
+                  moduleName = "QwkPassApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaybajaj/Desktop/QwkPassApp/QwkPassApp/ManageUserInfoViewController.swift"
+                  timestampString = "531539270.570612"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "159">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "QwkPassApp.ManageUserInfoViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;QwkPassApp.ManageUserInfoViewController&gt;"
+                  moduleName = "QwkPassApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaybajaj/Desktop/QwkPassApp/QwkPassApp/ManageUserInfoViewController.swift"
+                  timestampString = "531539270.571978"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
